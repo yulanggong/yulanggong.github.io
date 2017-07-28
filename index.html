@@ -12,8 +12,11 @@
 			font-weight: 300;
 		}
 		a {
-			color: #388CD5;
+			color: #444;
 			text-decoration: none;
+		}
+		a:hover {
+			color: #388CD5;
 		}
 		.header {
 			background: #FFF;
@@ -30,47 +33,58 @@
 		h2 {
 			font-weight: 300;
 			color: 222;
+			margin: 0;
+		}
+		p {
+			margin: 15px 0 0;
 		}
 		.main {
 			padding: 0 15px;
+			max-width: 660px;
+			margin: 0 auto;
 		}
 		.article {
-			max-width: 660px;
-			margin: 20px auto;
 			box-shadow: 0 0 6px rgba(0,0,0,.2);
+			box-sizing: margin-box;
+			margin: 20px 0;
 			background: #fff;
 			border-radius: 3px;
 			padding: 15px;
+			display: block;
 		}
     </style>
 </head>
 <body>
-<div class="header" ><h1>Wenlong Ren</h1></div>
+<div class="header" ><h1>Ren Wenlong</h1></div>
 <div class="main">
-	<div class="article">
+	<a href="https://github.com/yulanggong" class="article">
 		<h2>GitHub</h2>
-		<div><a href="https://github.com/yulanggong">yulanggong (任文龙)</a></div>
-	</div>
-	<div class="article">
+		<p>yulanggong (任文龙)</p>
+	</a>
+	<a href="http://least.renwenlong.com" class="article">
 		<h2>Least</h2>
-		<div><a href="http://least.renwenlong.com">带 CSS 进入 LESS/SASS/Stylus 的世界</a></div>
-	</div>
-	<div class="article">
+		<p>带 CSS 进入 LESS/SASS/Stylus 的世界</p>
+	</a>
+	<a href="http://wordz-solver.renwenlong.com" class="article">
 		<h2>Wordz Solver</h2>
-		<div><a href="http://wordz-solver.renwenlong.com">拼单词类游戏作弊器</a></div>
-	</div>
-	<div class="article">
+		<p>拼单词类游戏作弊器</p>
+	</a>
+	<a href="http://renwenlong.com/celery" class="article">
+		<h2>🌿于老爷子的芹菜</h2>
+		<p>一个解除网页“禁用复制”的小书签</p>
+	</a>
+	<a href="https://github.com/yulanggong/lodash-template-extras" class="article">
 		<h2>Lodash Template Extras</h2>
-		<div><a href="https://github.com/yulanggong/lodash-template-extras">为 lodash/underscore 的模板引擎增加了 extends/include/helper/alias 等特性</a></div>
-	</div>
-	<div class="article">
+		<p>为 lodash/underscore 的模板引擎增加了 extends/include/helper/alias 等特性</p>
+	</a>
+	<a href="/fapiao/" class="article">
 		<h2>发票小助手</h2>
-		<div><a href="/fapiao/">整理发票的小工具</a></div>
-	</div>
-	<div class="article">
+		<p>整理发票的小工具</p>
+	</a>
+	<a href="/qrcode/" class="article">
 		<h2>二维码</h2>
-		<div><a href="/qrcode/">方便数据传输</a></div>
-	</div>
+		<p>方便数据传输</p>
+	</a>
 </div>
 <script>
 var _hmt = _hmt || [];
