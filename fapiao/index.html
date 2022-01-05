@@ -157,7 +157,7 @@
 		<div class="table-type"></div>
 	</div>
 </div>
-<script src="http://lib.sinaapp.com/js/jquery/1.8.3/jquery.min.js"></script>
+<script src="//lib.sinaapp.com/js/jquery/1.8.3/jquery.min.js"></script>
 <script>
 (function(){
 	if (!window.jQuery) {
@@ -195,7 +195,9 @@
 
 	var model = [
 		{label: '类别', width: 200, name: 'type', search: true, keepLastValue: true, select: types},
-		{label: '备注', width: 200, name: 'comment', search: true, input: true},
+		{label: '备注', width: 200, name: 'comment', search: true, input: true, validate:function(){
+			return true;
+		}},
 		{label: '数量', width: 200, name: 'count', input: true, defaultValue: 1,validate:function(val){
 			return /^[\d\.]*$/.test(val) && !isNaN(+val);
 		}},
