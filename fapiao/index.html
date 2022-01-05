@@ -195,7 +195,7 @@
 
 	var model = [
 		{label: '类别', width: 200, name: 'type', search: true, keepLastValue: true, select: types},
-		{label: '备注', width: 200, name: 'type', search: true},
+		{label: '备注', width: 200, name: 'comment', search: true, input: true},
 		{label: '数量', width: 200, name: 'count', input: true, defaultValue: 1,validate:function(val){
 			return /^[\d\.]*$/.test(val) && !isNaN(+val);
 		}},
